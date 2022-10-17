@@ -1,0 +1,28 @@
+#pip install aiogram
+
+import config
+import logging
+
+from aiogram import Bot, Dispatcher, executor, types
+from aiogram.types.message import ContentType
+
+logging.basicConfig(level=logging.INFO)
+
+bot = Bot(token=config.TOKEN)
+dp = Dispatcher(bot)
+
+@dp.message_handler(commands=['hello'])
+async def hello(message: types.Message):
+    await bot.send_message(message.chat.id, "Привет")
+    
+if __name__ == "__main__":
+    executor.start_polling(dp, skip_updates=True)
+    
+    
+    
+    
+    
+#config.py
+TOKEN = "5775324729:AAEkp7x7QL9Zblp_BWkhUQQcqaP1_vJ9e1I"
+#по желанию
+PAYMENT_TOKE = "YOU'R TOKEN HERE"
