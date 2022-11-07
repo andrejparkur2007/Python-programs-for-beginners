@@ -8,7 +8,7 @@ from aiogram.types.message import ContentType
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(token=config.TOKEN)
+bot = Bot(token=config.TOKEN) //import TOKEN from file "config.py"
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['hello'])
