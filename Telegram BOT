@@ -23,6 +23,6 @@ if __name__ == "__main__":
     
     
 #config.py
-TOKEN = "You'r token from botfather"
+TOKEN = "Your token from botfather"
 #по желанию
-PAYMENT_TOKE = "YOU'R TOKEN HERE"
+PAYMENT_TOKE = "YOUR TOKEN HERE"
