@@ -7,4 +7,4 @@ while x > 7:
     x -= 7
     time.sleep(0.5)
 
-print('Андрей uwu')
+print('uwu')
